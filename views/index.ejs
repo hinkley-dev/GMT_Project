@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/jquery/jquery.js"></script>
+    <script src="/underscore/underscore.js"></script>
+    <script src="/chartjs/Chart.js"></script>
+    <script type="text/javascript" src ="javascripts/table.js"></script>
+
+
+
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/table.css' />
+    <link rel='stylesheet' href='/stylesheets/chart.css' />
+
+  </head>
+  <body>
+  <h1>Green Mountain Technology Project</h1>
+  <div id="tableContainer">
+
+      <div id ="chkboxContainer">
+      </div>
+    <div id="checkBoxButton">
+      <button class="btn" type="button" onclick="checkAllAttributes()" >Check All</button>
+    </div>
+
+
+
+  </div>
+  </div>
+  <div id="container">
+    <div id="graphTypeRadio"  >
+      <input type="radio" id="lineRadio" value="line" name="chartType" onclick="evaluateSelectionChange()" />Line Chart<br>
+      <input type="radio" id="barRadio" value="bar" name="chartType" onclick="evaluateSelectionChange()" checked />Bar Chart
+    </div>
+    <div id="colorButton">
+      <button class="btn" type="button" onclick="randomizeColor()">Randomize Colors</button>
+    </div>
+    <div class="grade-select" id="grade-select-id"></div>
+    <div id="chartDiv" class="chart-container">
+      <canvas id="myChart"></canvas>
+      <script type="text/javascript" src ="javascripts/gradeChart.js"></script>
+    </div>
+    <div class="attribute-select" id="attribute-select-id"></div>
+  </div>
+
+
+
+  </body>
+
+</html>
